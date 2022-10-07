@@ -1,0 +1,17 @@
+package Edureka;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Seleniumscript {
+
+	public static void main(String[] args) {
+	System.setProperty("webdriver.chrome.driver","C:\\Selenium WebDriver\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+	WebDriver driver = new ChromeDriver();
+	driver.get("https:edureka.co");
+	System.out.println(driver.getTitle());
+	driver.quit();
+
+	}
+
+}
